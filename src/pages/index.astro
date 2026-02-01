@@ -6,74 +6,87 @@ import Layout from '../layouts/Layout.astro';
 	title="Zelipt"
 	description="Zelipt is an AEO/GEO agency helping brands earn AI citations in ChatGPT, Gemini, Perplexity and Google AI Overviews."
 >
-	<section class="relative">
+	<section class="relative -mt-12 pt-12">
+		<div aria-hidden="true" class="pointer-events-none absolute inset-x-0 -top-16 h-[520px]">
+			<div class="absolute inset-0 rounded-[32px] bg-[radial-gradient(ellipse_at_top,rgba(124,58,237,0.35),transparent_60%)] blur-2xl"></div>
+			<div class="absolute inset-0 rounded-[32px] bg-[radial-gradient(ellipse_at_bottom,rgba(34,211,238,0.18),transparent_60%)] blur-2xl"></div>
+		</div>
+
 		<div class="grid gap-10 lg:grid-cols-12 lg:items-center">
 			<div class="space-y-6 lg:col-span-7">
 				<p
-					class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold tracking-tight text-slate-700"
+					class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold tracking-tight text-slate-200 backdrop-blur"
 				>
-					<span aria-hidden="true" class="size-1.5 rounded-full bg-gradient-to-tr from-indigo-500 to-fuchsia-500"></span>
+					<span aria-hidden="true" class="size-1.5 rounded-full bg-[linear-gradient(135deg,var(--accent),var(--accent2))]"></span>
 					AEO / GEO Agency
 				</p>
 
-				<h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-					Get cited by AI.
+				<h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+					Get cited by
+					<span class="bg-[linear-gradient(90deg,var(--accent),var(--accent2))] bg-clip-text text-transparent"> AI</span>.
 				</h1>
-				<p class="max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
-					Zelipt helps B2B brands become the answer in ChatGPT, Gemini, Perplexity, and AI Overviews.
-					We combine technical cleanup, content engineering, and digital PR so your expertise is referenced
-					(and linked) when people ask.
+				<p class="max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+					Zelipt helps B2B brands become the answer in ChatGPT, Gemini, Perplexity, and AI Overviews. We combine
+					technical cleanup, content engineering, and digital PR so your expertise is referenced (and linked) when
+					people ask.
 				</p>
 
 				<div class="flex flex-wrap items-center gap-3">
 					<a
 						href="/#ai-visibility-audit"
-						class="inline-flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/30"
+						class="inline-flex items-center justify-center rounded-md bg-[linear-gradient(135deg,var(--accent),var(--accent2))] px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-[0_0_0_1px_rgba(255,255,255,0.18)_inset,0_12px_30px_rgba(124,58,237,0.25)] transition hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
 					>
 						Get your free audit
 					</a>
 					<a
 						href="/#case-studies"
-						class="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/30"
+						class="inline-flex items-center justify-center rounded-md border border-white/12 bg-white/5 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
 					>
 						See case studies
 					</a>
 				</div>
 
 				<dl class="mt-6 grid gap-4 sm:grid-cols-3">
-					<div class="rounded-lg border border-slate-200 bg-white p-4">
-						<dt class="text-xs font-semibold text-slate-500">Outcome</dt>
-						<dd class="mt-1 text-sm font-medium text-slate-900">More AI citations & referral traffic</dd>
+					<div class="rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur">
+						<dt class="text-xs font-semibold text-slate-400">Outcome</dt>
+						<dd class="mt-1 text-sm font-medium text-white">More AI citations & referral traffic</dd>
 					</div>
-					<div class="rounded-lg border border-slate-200 bg-white p-4">
-						<dt class="text-xs font-semibold text-slate-500">Focus</dt>
-						<dd class="mt-1 text-sm font-medium text-slate-900">Answers that AI can retrieve & trust</dd>
+					<div class="rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur">
+						<dt class="text-xs font-semibold text-slate-400">Focus</dt>
+						<dd class="mt-1 text-sm font-medium text-white">Answers that AI can retrieve & trust</dd>
 					</div>
-					<div class="rounded-lg border border-slate-200 bg-white p-4">
-						<dt class="text-xs font-semibold text-slate-500">Deliverable</dt>
-						<dd class="mt-1 text-sm font-medium text-slate-900">Audit + roadmap in 5 business days</dd>
+					<div class="rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur">
+						<dt class="text-xs font-semibold text-slate-400">Deliverable</dt>
+						<dd class="mt-1 text-sm font-medium text-white">Audit + roadmap in 5 business days</dd>
 					</div>
 				</dl>
 			</div>
 
 			<div class="lg:col-span-5">
-				<div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 shadow-sm">
-					<h2 class="text-sm font-semibold text-slate-900">What we improve</h2>
-					<ul class="mt-4 space-y-3 text-sm text-slate-700">
+				<div class="rounded-2xl border border-white/10 bg-slate-900/40 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.06)_inset] backdrop-blur">
+					<div class="flex items-start justify-between gap-4">
+						<h2 class="text-sm font-semibold text-white">What we improve</h2>
+						<span
+							class="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-semibold tracking-tight text-slate-200"
+						>
+							Signal engineering
+						</span>
+					</div>
+					<ul class="mt-4 space-y-3 text-sm text-slate-200">
 						<li class="flex gap-2">
-							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-slate-900"></span>
+							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-[color:var(--accent2)]"></span>
 							Entity & topic coverage (so models understand what you own)
 						</li>
 						<li class="flex gap-2">
-							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-slate-900"></span>
+							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-[color:var(--accent2)]"></span>
 							Information architecture and internal linking for retrieval
 						</li>
 						<li class="flex gap-2">
-							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-slate-900"></span>
+							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-[color:var(--accent2)]"></span>
 							Authority signals, citations, and credible mentions
 						</li>
 						<li class="flex gap-2">
-							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-slate-900"></span>
+							<span aria-hidden="true" class="mt-1 size-1.5 rounded-full bg-[color:var(--accent2)]"></span>
 							Content formats AI actually cites (FAQs, comparisons, definitions)
 						</li>
 					</ul>
@@ -84,32 +97,32 @@ import Layout from '../layouts/Layout.astro';
 
 	<section id="how-it-works" class="mt-16 scroll-mt-24 space-y-8">
 		<header class="space-y-2">
-			<h2 class="text-2xl font-semibold tracking-tight">How it works</h2>
-			<p class="max-w-2xl text-slate-600">
+			<h2 class="text-2xl font-semibold tracking-tight text-white">How it works</h2>
+			<p class="max-w-2xl text-slate-300">
 				AEO/GEO isn’t “write blog posts and pray.” We run a tight loop: diagnose, engineer, publish, and earn
 				citations.
 			</p>
 		</header>
 
 		<div class="grid gap-4 md:grid-cols-3">
-			<div class="rounded-xl border border-slate-200 bg-white p-5">
-				<p class="text-xs font-semibold text-slate-500">01</p>
-				<h3 class="mt-2 font-semibold text-slate-900">Baseline + gaps</h3>
-				<p class="mt-2 text-sm text-slate-600">
+			<div class="rounded-xl border border-white/10 bg-slate-900/40 p-5 backdrop-blur">
+				<p class="text-xs font-semibold text-slate-400">01</p>
+				<h3 class="mt-2 font-semibold text-white">Baseline + gaps</h3>
+				<p class="mt-2 text-sm text-slate-300">
 					We map what AI answers today, where you’re missing, and why you’re not being cited.
 				</p>
 			</div>
-			<div class="rounded-xl border border-slate-200 bg-white p-5">
-				<p class="text-xs font-semibold text-slate-500">02</p>
-				<h3 class="mt-2 font-semibold text-slate-900">Content + structure</h3>
-				<p class="mt-2 text-sm text-slate-600">
+			<div class="rounded-xl border border-white/10 bg-slate-900/40 p-5 backdrop-blur">
+				<p class="text-xs font-semibold text-slate-400">02</p>
+				<h3 class="mt-2 font-semibold text-white">Content + structure</h3>
+				<p class="mt-2 text-sm text-slate-300">
 					We build pages and modules that are easy to retrieve, attribute, and trust.
 				</p>
 			</div>
-			<div class="rounded-xl border border-slate-200 bg-white p-5">
-				<p class="text-xs font-semibold text-slate-500">03</p>
-				<h3 class="mt-2 font-semibold text-slate-900">Authority + mentions</h3>
-				<p class="mt-2 text-sm text-slate-600">
+			<div class="rounded-xl border border-white/10 bg-slate-900/40 p-5 backdrop-blur">
+				<p class="text-xs font-semibold text-slate-400">03</p>
+				<h3 class="mt-2 font-semibold text-white">Authority + mentions</h3>
+				<p class="mt-2 text-sm text-slate-300">
 					We earn credible references so the models have reasons to cite you.
 				</p>
 			</div>
@@ -117,31 +130,33 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 	<section id="ai-visibility-audit" class="mt-16 scroll-mt-24">
-		<div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-8 shadow-sm">
-			<div class="grid gap-8 lg:grid-cols-12 lg:items-center">
-				<div class="space-y-3 lg:col-span-7">
-					<h2 class="text-2xl font-semibold tracking-tight">Free AI Visibility Audit</h2>
-					<p class="max-w-2xl text-slate-600">
-						We’ll review your current visibility in AI answers and send a clear action plan. No fluff—just the
-						fastest levers to earn citations.
-					</p>
-					<ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-700">
-						<li>Citation check across key prompts for your category</li>
-						<li>Content gaps + priority pages to build</li>
-						<li>Authority/PR opportunities to accelerate trust</li>
-					</ul>
-				</div>
-				<div class="lg:col-span-5">
-					<div class="rounded-xl border border-slate-200 bg-white p-5">
-						<p class="text-sm font-semibold text-slate-900">Request yours</p>
-						<p class="mt-1 text-sm text-slate-600">Email us your site + what you sell.</p>
-						<a
-							href="mailto:hello@zelipt.com?subject=Free%20AI%20Visibility%20Audit"
-							class="mt-4 inline-flex w-full items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/30"
-						>
-							Email hello@zelipt.com
-						</a>
-						<p class="mt-3 text-xs text-slate-500">Response within 1 business day.</p>
+		<div class="rounded-2xl bg-[linear-gradient(135deg,rgba(124,58,237,0.50),rgba(34,211,238,0.22),rgba(255,255,255,0.08))] p-px">
+			<div class="rounded-2xl bg-slate-950/60 p-8 backdrop-blur">
+				<div class="grid gap-8 lg:grid-cols-12 lg:items-center">
+					<div class="space-y-3 lg:col-span-7">
+						<h2 class="text-2xl font-semibold tracking-tight text-white">Free AI Visibility Audit</h2>
+						<p class="max-w-2xl text-slate-300">
+							We’ll review your current visibility in AI answers and send a clear action plan. No fluff—just the
+							fastest levers to earn citations.
+						</p>
+						<ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-200">
+							<li>Citation check across key prompts for your category</li>
+							<li>Content gaps + priority pages to build</li>
+							<li>Authority/PR opportunities to accelerate trust</li>
+						</ul>
+					</div>
+					<div class="lg:col-span-5">
+						<div class="rounded-xl border border-white/10 bg-slate-900/40 p-5 backdrop-blur">
+							<p class="text-sm font-semibold text-white">Request yours</p>
+							<p class="mt-1 text-sm text-slate-300">Email us your site + what you sell.</p>
+							<a
+								href="mailto:hello@zelipt.com?subject=Free%20AI%20Visibility%20Audit"
+								class="mt-4 inline-flex w-full items-center justify-center rounded-md bg-[linear-gradient(135deg,var(--accent),var(--accent2))] px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_0_0_1px_rgba(255,255,255,0.18)_inset,0_12px_30px_rgba(124,58,237,0.20)] transition hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+							>
+								Email hello@zelipt.com
+							</a>
+							<p class="mt-3 text-xs text-slate-400">Response within 1 business day.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -150,25 +165,25 @@ import Layout from '../layouts/Layout.astro';
 
 	<section id="case-studies" class="mt-16 scroll-mt-24 space-y-8">
 		<header class="space-y-2">
-			<h2 class="text-2xl font-semibold tracking-tight">Case Studies</h2>
-			<p class="max-w-2xl text-slate-600">A few examples of what “AI visibility” looks like in practice.</p>
+			<h2 class="text-2xl font-semibold tracking-tight text-white">Case Studies</h2>
+			<p class="max-w-2xl text-slate-300">A few examples of what “AI visibility” looks like in practice.</p>
 		</header>
 
 		<div class="grid gap-4 md:grid-cols-3">
-			<div class="rounded-xl border border-slate-200 bg-white p-5">
-				<h3 class="font-semibold text-slate-900">B2B SaaS</h3>
-				<p class="mt-2 text-sm text-slate-600">Built comparison + definition pages used by AI answers.</p>
-				<p class="mt-4 text-sm font-medium text-slate-900">Result: + citations (placeholder)</p>
+			<div class="rounded-xl border border-white/10 bg-slate-900/40 p-5 backdrop-blur">
+				<h3 class="font-semibold text-white">B2B SaaS</h3>
+				<p class="mt-2 text-sm text-slate-300">Built comparison + definition pages used by AI answers.</p>
+				<p class="mt-4 text-sm font-medium text-white">Result: + citations (placeholder)</p>
 			</div>
-			<div class="rounded-xl border border-slate-200 bg-white p-5">
-				<h3 class="font-semibold text-slate-900">Services</h3>
-				<p class="mt-2 text-sm text-slate-600">Improved entity clarity and structured internal linking.</p>
-				<p class="mt-4 text-sm font-medium text-slate-900">Result: + leads (placeholder)</p>
+			<div class="rounded-xl border border-white/10 bg-slate-900/40 p-5 backdrop-blur">
+				<h3 class="font-semibold text-white">Services</h3>
+				<p class="mt-2 text-sm text-slate-300">Improved entity clarity and structured internal linking.</p>
+				<p class="mt-4 text-sm font-medium text-white">Result: + leads (placeholder)</p>
 			</div>
-			<div class="rounded-xl border border-slate-200 bg-white p-5">
-				<h3 class="font-semibold text-slate-900">Ecommerce</h3>
-				<p class="mt-2 text-sm text-slate-600">Earned credible mentions to increase trust and references.</p>
-				<p class="mt-4 text-sm font-medium text-slate-900">Result: + share of voice (placeholder)</p>
+			<div class="rounded-xl border border-white/10 bg-slate-900/40 p-5 backdrop-blur">
+				<h3 class="font-semibold text-white">Ecommerce</h3>
+				<p class="mt-2 text-sm text-slate-300">Earned credible mentions to increase trust and references.</p>
+				<p class="mt-4 text-sm font-medium text-white">Result: + share of voice (placeholder)</p>
 			</div>
 		</div>
 	</section>
