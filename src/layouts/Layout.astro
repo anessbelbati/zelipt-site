@@ -24,79 +24,33 @@ const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
-		<meta name="theme-color" content="#020617" />
+		<meta name="theme-color" content="#ffffff" />
 		<title>{fullTitle}</title>
-
-		<style is:inline>
-			:root {
-				--accent: #7c3aed; /* violet */
-				--accent2: #22d3ee; /* cyan */
-			}
-		</style>
 	</head>
-	<body class="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-white/20 selection:text-white">
-		<div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10">
-			<div class="absolute inset-0 bg-slate-950"></div>
-			<div class="absolute inset-0 opacity-60 [background-image:radial-gradient(ellipse_at_top,rgba(124,58,237,0.35),transparent_55%),radial-gradient(ellipse_at_bottom,rgba(34,211,238,0.18),transparent_55%)]"></div>
-			<div class="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] [background-size:72px_72px]"></div>
-		</div>
-
+	<body class="min-h-screen bg-white text-slate-900 antialiased">
 		<a
 			href="#main-content"
-			class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white shadow-lg ring-1 ring-white/15"
+			class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-900"
 		>
 			Skip to content
 		</a>
 
-		<header
-			id="site-header"
-			data-scrolled="false"
-			data-menu-open="false"
-			class="sticky top-0 z-50 border-b border-transparent bg-transparent transition-[background-color,border-color,box-shadow] duration-300 data-[scrolled=true]:border-white/10 data-[scrolled=true]:bg-slate-950/75 data-[scrolled=true]:shadow-[0_1px_0_rgba(255,255,255,0.06)] data-[scrolled=true]:backdrop-blur data-[menu-open=true]:border-white/10 data-[menu-open=true]:bg-slate-950/85 data-[menu-open=true]:backdrop-blur"
-		>
-			<div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-				<a href="/" class="inline-flex items-center gap-2 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20">
-					<span aria-hidden="true" class="size-2 rounded-full bg-[linear-gradient(135deg,var(--accent),var(--accent2))]"></span>
-					<span class="text-base font-semibold tracking-tight text-white">{siteName}</span>
-				</a>
+		<header id="site-header" class="sticky top-0 z-50 border-b border-slate-200 bg-white">
+			<div class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-4 sm:px-6">
+				<a href="/" class="text-base font-semibold tracking-tight text-slate-900">{siteName}</a>
 
 				<nav aria-label="Primary" class="hidden items-center gap-6 md:flex">
-					<a
-						href="/#how-it-works"
-						class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-					>
-						How it works
-					</a>
-					<a
-						href="/#ai-visibility-audit"
-						class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-					>
-						AI Visibility Audit
-					</a>
-					<a
-						href="/#case-studies"
-						class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-					>
-						Case Studies
-					</a>
-					<a
-						href="/pricing"
-						class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-					>
-						Pricing
-					</a>
+					<a href="/#how-it-works" class="text-sm font-medium text-slate-700 hover:text-slate-900">How it works</a>
+					<a href="/#ai-visibility-audit" class="text-sm font-medium text-slate-700 hover:text-slate-900">AI Visibility Audit</a>
+					<a href="/#case-studies" class="text-sm font-medium text-slate-700 hover:text-slate-900">Case Studies</a>
+					<a href="/pricing" class="text-sm font-medium text-slate-700 hover:text-slate-900">Pricing</a>
 				</nav>
 
 				<div class="hidden items-center gap-3 md:flex">
-					<a
-						href="/login"
-						class="rounded-md px-2 py-1 text-sm font-medium text-slate-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-					>
-						Login
-					</a>
+					<a href="/login" class="text-sm font-medium text-slate-700 hover:text-slate-900">Login</a>
 					<a
 						href="/#ai-visibility-audit"
-						class="inline-flex items-center justify-center rounded-md bg-[linear-gradient(135deg,var(--accent),var(--accent2))] px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_0_0_1px_rgba(255,255,255,0.18)_inset,0_12px_30px_rgba(124,58,237,0.20)] transition hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+						class="inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800"
 					>
 						Get your free audit
 					</a>
@@ -104,7 +58,7 @@ const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
 
 				<button
 					type="button"
-					class="inline-flex items-center justify-center rounded-md p-2 text-slate-200 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20 md:hidden"
+					class="inline-flex items-center justify-center rounded-md border border-slate-200 p-2 text-slate-700 hover:bg-slate-50 hover:text-slate-900 md:hidden"
 					aria-controls="mobile-menu"
 					aria-expanded="false"
 					aria-label="Open menu"
@@ -119,44 +73,29 @@ const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
 				</button>
 			</div>
 
-			<div id="mobile-menu" class="hidden border-t border-white/10 bg-slate-950/90 backdrop-blur md:hidden" data-mobile-menu>
-				<div class="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+			<div id="mobile-menu" class="hidden border-t border-slate-200 bg-white md:hidden" data-mobile-menu>
+				<div class="mx-auto max-w-5xl px-4 py-4 sm:px-6">
 					<nav aria-label="Mobile" class="flex flex-col gap-2">
-						<a
-							href="/#how-it-works"
-							class="rounded-md px-3 py-2 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-						>
+						<a href="/#how-it-works" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">
 							How it works
 						</a>
-						<a
-							href="/#ai-visibility-audit"
-							class="rounded-md px-3 py-2 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-						>
+						<a href="/#ai-visibility-audit" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">
 							AI Visibility Audit
 						</a>
-						<a
-							href="/#case-studies"
-							class="rounded-md px-3 py-2 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-						>
+						<a href="/#case-studies" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">
 							Case Studies
 						</a>
-						<a
-							href="/pricing"
-							class="rounded-md px-3 py-2 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-						>
+						<a href="/pricing" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">
 							Pricing
 						</a>
 
 						<div class="mt-2 flex flex-col gap-2">
-							<a
-								href="/login"
-								class="rounded-md px-3 py-2 text-sm font-medium text-slate-200 hover:bg-white/5 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
-							>
+							<a href="/login" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">
 								Login
 							</a>
 							<a
 								href="/#ai-visibility-audit"
-								class="inline-flex items-center justify-center rounded-md bg-[linear-gradient(135deg,var(--accent),var(--accent2))] px-4 py-2 text-sm font-semibold text-slate-950 shadow-[0_0_0_1px_rgba(255,255,255,0.18)_inset,0_12px_30px_rgba(124,58,237,0.20)] transition hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+								class="inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800"
 							>
 								Get your free audit
 							</a>
@@ -166,12 +105,12 @@ const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
 			</div>
 		</header>
 
-		<main id="main-content" class="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+		<main id="main-content" class="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
 			<slot />
 		</main>
 
-		<footer class="border-t border-white/10">
-			<div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-400 sm:px-6 lg:px-8">
+		<footer class="border-t border-slate-200">
+			<div class="mx-auto max-w-5xl px-4 py-8 text-sm text-slate-600 sm:px-6">
 				<div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
 					<p>© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
 					<p class="text-slate-500">AEO/GEO • AI citations • Search visibility</p>
@@ -180,39 +119,22 @@ const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
 		</footer>
 
 		<script is:inline>
-			const header = document.getElementById('site-header');
 			const button = document.querySelector('[data-mobile-menu-button]');
 			const menu = document.querySelector('[data-mobile-menu]');
 
-			function setScrolled() {
-				if (!header) return;
-				const menuOpen = header.dataset.menuOpen === 'true';
-				if (menuOpen) {
-					header.dataset.scrolled = 'true';
-					return;
-				}
-				header.dataset.scrolled = window.scrollY > 8 ? 'true' : 'false';
-			}
-
 			function setMenuOpen(open) {
-				if (!button || !menu || !header) return;
+				if (!button || !menu) return;
 				menu.classList.toggle('hidden', !open);
 				button.setAttribute('aria-expanded', String(open));
 				button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-				header.dataset.menuOpen = open ? 'true' : 'false';
 
 				const openIcon = button.querySelector('[data-icon="open"]');
 				const closeIcon = button.querySelector('[data-icon="close"]');
 				if (openIcon) openIcon.classList.toggle('hidden', open);
 				if (closeIcon) closeIcon.classList.toggle('hidden', !open);
-
-				setScrolled();
 			}
 
-			setScrolled();
-			window.addEventListener('scroll', setScrolled, { passive: true });
-
-			if (button && menu && header) {
+			if (button && menu) {
 				button.addEventListener('click', () => {
 					const isOpen = button.getAttribute('aria-expanded') === 'true';
 					setMenuOpen(!isOpen);

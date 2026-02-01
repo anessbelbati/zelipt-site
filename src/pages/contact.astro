@@ -3,17 +3,18 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Contact">
-	<section class="space-y-4">
-		<h1 class="text-2xl font-semibold tracking-tight text-white">Contact</h1>
-		<p class="max-w-2xl text-slate-300">Placeholder page.</p>
+	<section class="space-y-6">
+		<header class="space-y-2">
+			<h1 class="text-3xl font-semibold tracking-tight text-slate-900">Contact</h1>
+			<p class="max-w-2xl text-slate-600">Email is the fastest way to reach us.</p>
+		</header>
 
-		<div class="rounded-lg border border-white/10 bg-slate-900/40 p-4 backdrop-blur">
-			<p class="text-sm text-slate-200">
+		<div class="rounded-lg border border-slate-200 bg-white p-5">
+			<p class="text-sm text-slate-700">
 				Email:
-				<span class="font-medium text-white">hello@zelipt.com</span>
-				(placeholder)
+				<a class="font-medium text-slate-900 underline underline-offset-4" href="mailto:hello@zelipt.com">hello@zelipt.com</a>
 			</p>
-			<p class="mt-2 text-sm text-slate-400">Or add a form integration here (placeholder).</p>
+			<p class="mt-2 text-sm text-slate-500">(Form integration can go here later.)</p>
 		</div>
 	</section>
 </Layout>
