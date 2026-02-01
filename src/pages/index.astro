@@ -1,35 +1,35 @@
 ---
-const siteName = "Zelipt";
+import Layout from '../layouts/Layout.astro';
+
+const siteName = 'Zelipt';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{siteName}</title>
-	</head>
-	<body>
-		<header>
-			<h1>{siteName}</h1>
-			<nav>
-				<a href="/">Home</a> |
-				<a href="/pricing">Pricing</a> |
-				<a href="/contact">Contact</a>
-			</nav>
-		</header>
-		<main>
-			<p>Scrape & enrich leads automatically</p>
-			<ul>
-				<li>Scrape leads from websites and directories</li>
-				<li>Enrich prospects with company and contact details</li>
-				<li>Export to CSV or send to your CRM via webhook</li>
-			</ul>
-			<p>
-				<a href="#">Get started (CTA placeholder)</a>
+<Layout title={siteName}>
+	<section class="space-y-6">
+		<header class="space-y-2">
+			<h1 class="text-3xl font-semibold tracking-tight">Scrape &amp; enrich leads automatically</h1>
+			<p class="max-w-2xl text-slate-600">
+				Zelipt helps you collect leads from websites and directories, enrich them with company/contact data,
+				and export them to your workflow.
 			</p>
-		</main>
-	</body>
-</html>
+		</header>
+
+		<ul class="list-disc space-y-1 pl-5 text-slate-700">
+			<li>Scrape leads from websites and directories</li>
+			<li>Enrich prospects with company and contact details</li>
+			<li>Export to CSV or send to your CRM via webhook</li>
+		</ul>
+
+		<div class="flex flex-wrap items-center gap-3">
+			<a
+				class="inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
+				href="#"
+			>
+				Get started (CTA placeholder)
+			</a>
+			<a class="text-sm text-slate-700 hover:text-slate-900 hover:underline" href="/pricing">
+				See pricing
+			</a>
+		</div>
+	</section>
+</Layout>

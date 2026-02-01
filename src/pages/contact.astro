@@ -1,24 +1,17 @@
 ---
-const siteName = "Zelipt";
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Contact | {siteName}</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a href="/">Home</a> |
-				<a href="/pricing">Pricing</a> |
-				<a href="/contact">Contact</a>
-			</nav>
-		</header>
-		<main>
-			<h1>Contact</h1>
-			<p>Placeholder page.</p>
-		</main>
-	</body>
-</html>
+<Layout title="Contact">
+	<section class="space-y-4">
+		<h1 class="text-2xl font-semibold tracking-tight">Contact</h1>
+		<p class="max-w-2xl text-slate-600">Placeholder page.</p>
+
+		<div class="rounded-lg border border-slate-200 p-4">
+			<p class="text-sm text-slate-700">
+				Email: <span class="font-medium">hello@zelipt.com</span> (placeholder)
+			</p>
+			<p class="mt-2 text-sm text-slate-500">Or add a form integration here (placeholder).</p>
+		</div>
+	</section>
+</Layout>

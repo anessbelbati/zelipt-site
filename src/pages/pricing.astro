@@ -1,24 +1,28 @@
 ---
-const siteName = "Zelipt";
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Pricing | {siteName}</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a href="/">Home</a> |
-				<a href="/pricing">Pricing</a> |
-				<a href="/contact">Contact</a>
-			</nav>
-		</header>
-		<main>
-			<h1>Pricing</h1>
-			<p>Placeholder page.</p>
-		</main>
-	</body>
-</html>
+<Layout title="Pricing">
+	<section class="space-y-4">
+		<h1 class="text-2xl font-semibold tracking-tight">Pricing</h1>
+		<p class="text-slate-600">Placeholder page.</p>
+
+		<div class="grid gap-4 md:grid-cols-3">
+			<div class="rounded-lg border border-slate-200 p-4">
+				<h2 class="font-medium">Starter</h2>
+				<p class="mt-1 text-sm text-slate-600">For small lead lists.</p>
+				<p class="mt-4 text-sm text-slate-500">Price: (placeholder)</p>
+			</div>
+			<div class="rounded-lg border border-slate-200 p-4">
+				<h2 class="font-medium">Pro</h2>
+				<p class="mt-1 text-sm text-slate-600">For teams running campaigns.</p>
+				<p class="mt-4 text-sm text-slate-500">Price: (placeholder)</p>
+			</div>
+			<div class="rounded-lg border border-slate-200 p-4">
+				<h2 class="font-medium">Enterprise</h2>
+				<p class="mt-1 text-sm text-slate-600">Custom volume and workflows.</p>
+				<p class="mt-4 text-sm text-slate-500">Price: (placeholder)</p>
+			</div>
+		</div>
+	</section>
+</Layout>

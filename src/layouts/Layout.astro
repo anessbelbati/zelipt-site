@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+
+const siteName = 'Zelipt';
+
+type Props = {
+	title?: string;
+	description?: string;
+};
+
+const { title = siteName, description = 'Scrape & enrich leads automatically.' } = Astro.props;
+const fullTitle = title === siteName ? siteName : `${title} | ${siteName}`;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<title>{fullTitle}</title>
+	</head>
+	<body class="min-h-screen bg-white text-slate-900">
+		<header class="border-b border-slate-200">
+			<div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-4">
+				<a href="/" class="text-base font-semibold tracking-tight">
+					{siteName}
+				</a>
+				<nav class="flex items-center gap-4 text-sm">
+					<a class="text-slate-700 hover:text-slate-900 hover:underline" href="/">Home</a>
+					<a class="text-slate-700 hover:text-slate-900 hover:underline" href="/pricing">Pricing</a>
+					<a class="text-slate-700 hover:text-slate-900 hover:underline" href="/contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="mx-auto max-w-5xl px-4 py-10">
+			<slot />
+		</main>
+
+		<footer class="border-t border-slate-200">
+			<div class="mx-auto max-w-5xl px-4 py-6 text-sm text-slate-600">
+				© {new Date().getFullYear()} {siteName}. All rights reserved.
+			</div>
+		</footer>
+	</body>
+</html>
